@@ -5,8 +5,6 @@ RUN corepack enable \
 && corepack prepare pnpm@8.7.6 --activate \
 && chown node:node /directus
 EXPOSE 8055
-EXPOSE 80
-EXPOSE 443
 USER node
 CMD : \
 && node /directus/cli.js bootstrap \
